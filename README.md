@@ -2,7 +2,17 @@
 ### Evelyn Hoover
 ## Assignment 1 Part 1: Introduction and Proposed Methods
 ## Introduction  
- ###
+ ### Biological Context  
+ ### Goals  
+ ### Challenges and Limitations  
+## Proposed Methods
+ ### Data Description
+ ### Quality Control
+ ### Assembly
+ ### Alignment
+ ### Visualisation
+## Conclusion
+## References
   **Goals**:  
   - to learn how to assemble a bacterial genome, align it with a reference genome and visualize the outcome\
   - in real world scenario, the goal of this process could be to determine if the raw data exhibits any mutations, or to determine if the observed species is what it is being compared to as opposed to a new or different species                                                       
