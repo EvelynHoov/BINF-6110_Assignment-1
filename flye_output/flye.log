@@ -1,0 +1,78 @@
+[2026-02-01 23:33:15] root: INFO: Starting Flye 2.9.6-b1802
+[2026-02-01 23:33:15] root: DEBUG: Cmd: /usr/local/bin/flye --nano-raw /data/SRR32410565.fastq --out-dir /data/flye_output
+[2026-02-01 23:33:15] root: DEBUG: Python version: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+[2026-02-01 23:33:15] root: INFO: >>>STAGE: configure
+[2026-02-01 23:33:15] root: INFO: Configuring run
+[2026-02-01 23:33:20] root: INFO: Total read length: 809296219
+[2026-02-01 23:33:20] root: INFO: Reads N50/N90: 4683 / 2687
+[2026-02-01 23:33:20] root: INFO: Minimum overlap set to 3000
+[2026-02-01 23:33:20] root: INFO: >>>STAGE: assembly
+[2026-02-01 23:33:20] root: INFO: Assembling disjointigs
+[2026-02-01 23:33:20] root: DEBUG: -----Begin assembly log------
+[2026-02-01 23:33:20] root: DEBUG: Running: flye-modules assemble --reads /data/SRR32410565.fastq --out-asm /data/flye_output/00-assembly/draft_assembly.fasta --config /usr/local/lib/python3.10/dist-packages/flye/config/bin_cfg/asm_raw_reads.cfg --log /data/flye_output/flye.log --threads 1 --min-ovlp 3000
+[2026-02-01 23:33:20] DEBUG: Build date: May 15 2025 15:22:32
+[2026-02-01 23:33:20] DEBUG: Total RAM: 7 Gb
+[2026-02-01 23:33:20] DEBUG: Available RAM: 6 Gb
+[2026-02-01 23:33:20] DEBUG: Total CPUs: 12
+[2026-02-01 23:33:20] DEBUG: Loading /usr/local/lib/python3.10/dist-packages/flye/config/bin_cfg/asm_raw_reads.cfg
+[2026-02-01 23:33:20] DEBUG: Loading /usr/local/lib/python3.10/dist-packages/flye/config/bin_cfg/asm_defaults.cfg
+[2026-02-01 23:33:20] DEBUG: 	big_genome_threshold=29000000
+[2026-02-01 23:33:20] DEBUG: 	meta_read_filter_kmer_freq=100
+[2026-02-01 23:33:20] DEBUG: 	chain_large_gap_penalty=2
+[2026-02-01 23:33:20] DEBUG: 	chain_small_gap_penalty=0.5
+[2026-02-01 23:33:20] DEBUG: 	chain_gap_jump_threshold=100
+[2026-02-01 23:33:20] DEBUG: 	max_jump_gap=500
+[2026-02-01 23:33:20] DEBUG: 	max_coverage_drop_rate=5
+[2026-02-01 23:33:20] DEBUG: 	max_extensions_drop_rate=5
+[2026-02-01 23:33:20] DEBUG: 	chimera_window=100
+[2026-02-01 23:33:20] DEBUG: 	chimera_overhang=1000
+[2026-02-01 23:33:20] DEBUG: 	min_reads_in_disjointig=4
+[2026-02-01 23:33:20] DEBUG: 	max_inner_reads=10
+[2026-02-01 23:33:20] DEBUG: 	max_inner_fraction=0.25
+[2026-02-01 23:33:20] DEBUG: 	aggressive_dup_filter=1
+[2026-02-01 23:33:20] DEBUG: 	max_separation=500
+[2026-02-01 23:33:20] DEBUG: 	unique_edge_length=50000
+[2026-02-01 23:33:20] DEBUG: 	min_repeat_res_support=0.51
+[2026-02-01 23:33:20] DEBUG: 	out_paths_ratio=5
+[2026-02-01 23:33:20] DEBUG: 	graph_cov_drop_rate=5
+[2026-02-01 23:33:20] DEBUG: 	coverage_estimate_window=100
+[2026-02-01 23:33:20] DEBUG: 	max_bubble_length=50000
+[2026-02-01 23:33:20] DEBUG: 	loop_coverage_rate=1.5
+[2026-02-01 23:33:20] DEBUG: 	repeat_edge_cov_mult=1.75
+[2026-02-01 23:33:20] DEBUG: 	weak_detach_rate=5
+[2026-02-01 23:33:20] DEBUG: 	tip_coverage_rate=2
+[2026-02-01 23:33:20] DEBUG: 	tip_length_rate=2
+[2026-02-01 23:33:20] DEBUG: 	output_gfa_before_rr=1
+[2026-02-01 23:33:20] DEBUG: 	remove_alt_edges=0
+[2026-02-01 23:33:20] DEBUG: 	low_cutoff_warning=1
+[2026-02-01 23:33:20] DEBUG: 	kmer_size=17
+[2026-02-01 23:33:20] DEBUG: 	use_minimizers=0
+[2026-02-01 23:33:20] DEBUG: 	reads_base_alignment=0
+[2026-02-01 23:33:20] DEBUG: 	meta_read_top_kmer_rate=0.40
+[2026-02-01 23:33:20] DEBUG: 	maximum_jump=1500
+[2026-02-01 23:33:20] DEBUG: 	maximum_overhang=1500
+[2026-02-01 23:33:20] DEBUG: 	repeat_kmer_rate=100
+[2026-02-01 23:33:20] DEBUG: 	assemble_ovlp_divergence=0.10
+[2026-02-01 23:33:20] DEBUG: 	assemble_divergence_relative=1
+[2026-02-01 23:33:20] DEBUG: 	repeat_graph_ovlp_divergence=0.08
+[2026-02-01 23:33:20] DEBUG: 	read_align_ovlp_divergence=0.25
+[2026-02-01 23:33:20] DEBUG: 	hpc_scoring_on=0
+[2026-02-01 23:33:20] DEBUG: 	add_unassembled_reads=0
+[2026-02-01 23:33:20] DEBUG: 	extend_contigs_with_repeats=0
+[2026-02-01 23:33:20] DEBUG: 	min_read_cov_cutoff=3
+[2026-02-01 23:33:20] DEBUG: 	short_tip_length=20000
+[2026-02-01 23:33:20] DEBUG: 	long_tip_length=100000
+[2026-02-01 23:33:20] DEBUG: Running with k-mer size: 17
+[2026-02-01 23:33:20] DEBUG: Running with minimum overlap 3000
+[2026-02-01 23:33:20] DEBUG: Metagenome mode: N
+[2026-02-01 23:33:20] DEBUG: Short mode: N
+[2026-02-01 23:33:20] INFO: Reading sequences
+[2026-02-01 23:33:23] DEBUG: Building positional index
+[2026-02-01 23:33:23] DEBUG: Total sequence: 689064639 bp
+[2026-02-01 23:33:46] INFO: Counting k-mers:
+[2026-02-01 23:53:56] DEBUG: Updating k-mer histogram
+[2026-02-01 23:58:05] DEBUG: Hash size: 5002278
+[2026-02-01 23:58:05] DEBUG: Total k-mers 78433744
+[2026-02-01 23:58:09] root: ERROR: Looks like the system ran out of memory
+[2026-02-01 23:58:09] root: ERROR: Command '['flye-modules', 'assemble', '--reads', '/data/SRR32410565.fastq', '--out-asm', '/data/flye_output/00-assembly/draft_assembly.fasta', '--config', '/usr/local/lib/python3.10/dist-packages/flye/config/bin_cfg/asm_raw_reads.cfg', '--log', '/data/flye_output/flye.log', '--threads', '1', '--min-ovlp', '3000']' died with <Signals.SIGKILL: 9>.
+[2026-02-01 23:58:09] root: ERROR: Pipeline aborted
