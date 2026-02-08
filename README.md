@@ -38,7 +38,7 @@ C) <img width="1281" height="567" alt="senterica_SNP2" src="https://github.com/u
 *Antimicrobial Resistance*. https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance. 
 *LongReadSum: A Fast and Flexible Quality Control and Signal Summarization Tool for Long-Read Sequencing Data*. (2025) Computational and Structural Biotechnology Journal, vol. 27, pp. 556–63.  
 *Pathogen Safety Data Sheets: Infectious Substances – Salmonella Enterica Spp.* (2001) Public Health Agency of Canada. https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment/salmonella-enterica.html.  
-*Salmonella Enterica Subsp. Enterica Serovar Typhimurium Str. LT2, Comp - Nucleotide*. - NCBI https://www.ncbi.nlm.nih.gov/nuccore/NC_003197.2
+*Salmonella Enterica Subsp. Enterica Serovar Typhimurium Str. LT2, Comp - Nucleotide*. - NCBI https://www.ncbi.nlm.nih.gov/nuccore/NC_003197.2  
 Wang, Yunhao, *et al*. (2021) *Nanopore Sequencing Technology, Bioinformatics and Applications*. Nature Biotechnology, vol. 39, no. 11, pp. 1348–65.  
 Waters, E.V. *et al*., (2025) *Bacterial genome structural variation: prevalence, mechanisms, and consequences*. Trends in Microbio. vol. 33, no. 8, p875-886.  
 Wattford, S. & Warrington, S.J. (2023) *Bacterial DNA Mutations* NIH. https://www.ncbi.nlm.nih.gov/books/NBK459274/https://www.ncbi.nlm.nih.gov/books/NBK459274/
