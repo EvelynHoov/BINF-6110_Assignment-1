@@ -9,17 +9,22 @@
   The goal of this assignment is to assemble the long read sequences of  _S. enterica_ produced from a Nanopore sequencer and align the assembled genome to a reference genome from the literature. In a real-world scenario this technique would often be used to compare the genetics of a sample to recorded literature to determine mutations or the effects of knockouts of genes within the population. In this circumstance, the goal is to successfully clean the data, assemble it, align it, and visualise it.
  ### Challenges and Limitations  
   Considering the sequences to be used are long reads there may be more errors than if short read sequencing were used. For this reason steps may need to be repeated to ensure the sequences are the highest quality possible before moving onto the next step. However, long read sequencing is necessary when looking for mutations and comparing the genome to a reference. Additionally, as someone with very little experience in bioinformatics as a whole, the progression of this project will not be nearly as linear as it could be with someone with more experience. However, that is simply what happens when learning a new skill.
-## Proposed Methods  
+## Methods  
  ### Data Description  
   The data used in this assignment is a long read sequence from an Oxford Nanopore Sequencer. The sequence was generated using R10 chemistry and the reads have an expected accuracy of Q20+ and a read length distribution of N50:5-15kb. The data is provided as a FASTQ file.
  ### Quality Control
   The FASTQ file is initially run through FASTQC which is generally used for short read sequences but can also be used to run long read sequences in Linux (_LongReadSum: A Fast and Flexible Quality Control and Signal Summarization Tool for Long-Read Sequencing Data_, 2025). This process works to trim the data of any errors so that it can be assembled properly. While FASTQC can be used on long read sequences, it does have some pitfalls in that it does not provide metrics important for long reads nor read and base QC mapping (_LongReadSum: A Fast and Flexible Quality Control and Signal Summarization Tool for Long-Read Sequencing Data_, 2025). However, FASTQC is simple to use for new users and can provide results sufficient for this project.
  ### Assembly
-  To perform de novo assembly on the reads to form a consensus genome, Flye will be used. Flye is optimal for this process as it constructs an assembly graph using disjointed segments which allows it to improve assembly at long and repetetive regions (Wang et al.). This process does not require manual intervention, however if a polishing step is required after assembly than Medaka and Homopolish are recommended (Wang et al.).
+  To perform de novo assembly on the reads to form a consensus genome, Flye will be used. Flye is optimal for this process as it constructs an assembly graph using disjointed segments which allows it to improve assembly at long and repetetive regions (Wang et al.). This process does not require manual intervention, and a polishing step was not required.
  ### Alignment  
-  After assembly, the consensus genome will be aligned to a reference genome. The reference genome FASTA file will be obtained from NCBI (Salmonella Enterica Subsp. Enterica Serovar Typhimurium Str. LT2, Comp - Nucleotide - NCBI). minimap2 will be used to align the reads to the reference genome. A CIGAR will be generated and the outputs will be formed into the SAM format. 
+  After assembly, the consensus genome will be aligned to a reference genome. The reference genome FASTA file will be obtained from NCBI (Salmonella Enterica Subsp. Enterica Serovar Typhimurium Str. LT2, Comp - Nucleotide - NCBI). minimap2 will be used to align the reads to the reference genome. A CIGAR will be generated and the outputs will be formed into the SAM format.
  ### Visualisation  
-  To visualise the alignment it will first have to be sorted and indexed. For this samtools will be used to convert the file to a BAM file and that file will then be sorted and indexed using samtools. Visualisation will then be done using IGV. 
+  To visualise the alignment it will first have to be sorted and indexed. For this samtools will be used to convert the file to a BAM file and that file will then be sorted and indexed using samtools. Visualisation will then be done using IGV. Proksee will be used to generate a whole-genome view.
+## Discussion
+ <img width="841" height="422" alt="senterica_fullgenome" src="https://github.com/user-attachments/assets/41b6c46d-a27c-460c-89b4-93985fd75dd0" />
+ <ins> Figure 1. </ins> A full genome view of the *Salmonella enterica* assembled genome visualized using Proksee. Contigs of the genome are demarkated in different shades of gray at the centre of the structure with lines indicating functionality of the associated genes in different colours stemming from the centre.
+
+
 ## Conclusion  
  All in all, this methodology can be used successfully for assembling a long read bacterial ONT sequence and comparing that sequence to a reference genome, while also being simple enough for a novice to learn from. While there are limitations and potential pitfalls in this process, it should be reliable enough to perform the project sufficiently.
 ## References  
