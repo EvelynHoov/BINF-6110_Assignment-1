@@ -24,11 +24,13 @@
  <img width="841" height="422" alt="senterica_fullgenome" src="https://github.com/user-attachments/assets/41b6c46d-a27c-460c-89b4-93985fd75dd0" />  
  <ins> Figure 1. </ins> A full genome view of the *Salmonella enterica* assembled genome visualized using Proksee. The three contigs of the genome are demarkated in different shades of gray at the centre of the structure with lines indicating functionality of the associated genes in different colours stemming from the centre. The bakta tool within Proksee was used to determine the gene functionalities. 
 <img width="1281" height="567" alt="contig4_variantcalling" src="https://github.com/user-attachments/assets/9cde0e36-41c9-413a-b1d0-863bebbdb137" />  
-<ins> Figure 2. </ins> IGV plot demonstrating variant calling on contig 4 from the assembled *Salmonella enterica* genome when aligned to the reference genome. This contig was relatively short and had fairly high levels of variance, especially toward the end of the contig.
-<img width="1281" height="567" alt="senterica_SNP1" src="https://github.com/user-attachments/assets/e8116857-30f3-4d86-9f8d-7a1f0cf47974" />
-<img width="1281" height="567" alt="senterica_SNP3" src="https://github.com/user-attachments/assets/6f1b7815-c665-4c85-b527-3454bdd194bc" />
-<img width="1281" height="567" alt="senterica_SNP2" src="https://github.com/user-attachments/assets/18d16366-d8aa-4042-b56a-e7c2da015583" />  
-<ins> Figure 3 </ins> Three examples of SNPs from the variant calling visualised on IGV. 
+<ins> Figure 2. </ins> IGV plot demonstrating variant calling on contig 4 from the assembled *Salmonella enterica* genome when aligned to the reference genome. This contig was relatively short and had fairly high levels of variance, especially toward the end of the contig.  
+A) <img width="1281" height="567" alt="senterica_SNP3" src="https://github.com/user-attachments/assets/6f1b7815-c665-4c85-b527-3454bdd194bc" />
+B) <img width="1281" height="567" alt="senterica_SNP1" src="https://github.com/user-attachments/assets/e8116857-30f3-4d86-9f8d-7a1f0cf47974" />
+C) <img width="1281" height="567" alt="senterica_SNP2" src="https://github.com/user-attachments/assets/18d16366-d8aa-4042-b56a-e7c2da015583" />  
+<ins> Figure 3 </ins> Three examples of SNPs from the variant calling visualised on IGV. The first image (A) is two SNPs on contig 3. The second two images (B and C) are of a collection of SNPs seen on contig 4. B) is on an earlier section of contig 4 while C) is on a later section.  
+## Discussion  
+ 
 
 
 
