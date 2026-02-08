@@ -20,9 +20,16 @@
   After assembly, the consensus genome will be aligned to a reference genome. The reference genome FASTA file will be obtained from NCBI (Salmonella Enterica Subsp. Enterica Serovar Typhimurium Str. LT2, Comp - Nucleotide - NCBI). minimap2 will be used to align the reads to the reference genome. A CIGAR will be generated and the outputs will be formed into the SAM format.
  ### Visualisation  
   To visualise the alignment it will first have to be sorted and indexed. For this samtools will be used to convert the file to a BAM file and that file will then be sorted and indexed using samtools. Visualisation will then be done using IGV. Proksee will be used to generate a whole-genome view.
-## Discussion
- <img width="841" height="422" alt="senterica_fullgenome" src="https://github.com/user-attachments/assets/41b6c46d-a27c-460c-89b4-93985fd75dd0" />
- <ins> Figure 1. </ins> A full genome view of the *Salmonella enterica* assembled genome visualized using Proksee. Contigs of the genome are demarkated in different shades of gray at the centre of the structure with lines indicating functionality of the associated genes in different colours stemming from the centre.
+## Results
+ <img width="841" height="422" alt="senterica_fullgenome" src="https://github.com/user-attachments/assets/41b6c46d-a27c-460c-89b4-93985fd75dd0" />  
+ <ins> Figure 1. </ins> A full genome view of the *Salmonella enterica* assembled genome visualized using Proksee. The three contigs of the genome are demarkated in different shades of gray at the centre of the structure with lines indicating functionality of the associated genes in different colours stemming from the centre. The bakta tool within Proksee was used to determine the gene functionalities. 
+<img width="1281" height="567" alt="contig4_variantcalling" src="https://github.com/user-attachments/assets/9cde0e36-41c9-413a-b1d0-863bebbdb137" />  
+<ins> Figure 2. </ins> IGV plot demonstrating variant calling on contig 4 from the assembled *Salmonella enterica* genome when aligned to the reference genome. This contig was relatively short and had fairly high levels of variance, especially toward the end of the contig.
+<img width="1281" height="567" alt="senterica_SNP1" src="https://github.com/user-attachments/assets/e8116857-30f3-4d86-9f8d-7a1f0cf47974" />
+<img width="1281" height="567" alt="senterica_SNP3" src="https://github.com/user-attachments/assets/6f1b7815-c665-4c85-b527-3454bdd194bc" />
+<img width="1281" height="567" alt="senterica_SNP2" src="https://github.com/user-attachments/assets/18d16366-d8aa-4042-b56a-e7c2da015583" />  
+<ins> Figure 3 </ins> Three examples of SNPs from the variant calling visualised on IGV. 
+
 
 
 ## Conclusion  
